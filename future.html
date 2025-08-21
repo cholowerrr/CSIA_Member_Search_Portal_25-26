@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSIA - Future Activities</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* Timeline Styling */
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ffffff; /* line color white */
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 60px;
+  color: #ffffff; /* make text white */
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: #000; /* inner dot black for contrast */
+  border: 4px solid #ffffff; /* dot border white */
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255,255,255,0.4);
+}
+
+.timeline-item h3 {
+  margin: 0 0 0.5rem;
+  color: #ffffff; /* white title */
+  font-size: 1.2rem;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: #ffffff; /* white paragraph */
+  line-height: 1.5;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="future.html" class="active">Future Activities</a></li>
+        </ul>
+    </nav>
+    <h1>Cybersecurity Intelligence Alliance</h1>
+</header>
+
+<!-- Future Activities Timeline -->
+<main style="padding: 3rem 2rem; max-width: 900px; margin: auto;">
+    <h2 style="color:white;">Future Activities</h2>
+    <p style="color:white;">
+        Here are the upcoming and planned initiatives of the Cybersecurity Intelligence Alliance (CSIA).  
+        These activities aim to strengthen cybersecurity awareness, provide hands-on learning, and build a strong community of cyber defenders.  
+        <strong>Note: These activities are subject to change — more events may be added or adjusted depending on time and circumstances.</strong>
+    </p>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>Flag Wars: CTF Competition</h3>
+            <p>To organize a competitive CTF event during SOC Days to enhance students' cybersecurity skills, encourage teamwork, and deepen their understanding of real-world security challenges.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>#HAUisSecure: Cyber Awareness Campaign</h3>
+            <p>To educate the HAU community on essential cybersecurity practices by posting daily pubmats focused on 2FA, safe public Wi-Fi use, avoiding suspicious links, and the risks of using cracked software.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Google Workspace Through Cybersecurity Issues</h3>
+            <p>In partnership with GDG on Campus - HAU, this event provides faculty with technical knowledge to securely use Google Workspace in the academic environment.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>CyberSide Up (Monthly Newsletter)</h3>
+            <p>A monthly cybersecurity newsletter focusing on topics like MFA, incident response, phishing awareness, and malware trends.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>CyberSecure Gens: 4th Regional Cyber Security Conference & CTF</h3>
+            <p>To build knowledge and strengthen cyber defenders across all ages through a major regional conference and competitive CTF event.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>ITN Review Skills Session</h3>
+            <p>To help second-year students develop practical networking skills in configuring routers, switches, and devices.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>ITN Review Session</h3>
+            <p>A review session that reinforces Introduction to Networking concepts in preparation for preliminary exams.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Public Release of CTF Website</h3>
+            <p>To officially launch the CSIA CTF website, providing access to interactive challenges that foster skill growth.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>A Day with the Foxes</h3>
+            <p>Promote awareness of the BS Cybersecurity program by showcasing ethical hacking training, facilities, and academic resources.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Rooted Together: A Tree Planting Activity</h3>
+            <p>To advocate for environmentally and socially responsible actions that contribute to sustainable practices.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Deep Dived: Unpacking the Cyber Threat Landscape</h3>
+            <p>To introduce students to advanced cybersecurity concepts like malware analysis, sandboxing, reverse engineering, and penetration testing.</p>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025-2026 Cybersecurity Intelligence Alliance</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

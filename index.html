@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSIA - Member Search</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Header with Navigation -->
+<header>
+    <nav>
+    <div class="menu-toggle" id="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="future.html">Future Activities</a></li>
+    </ul>
+    </nav>
+    <h1>Cybersecurity Intelligence Alliance</h1>
+    <p>Welcome to the Member Search Portal</p>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-slider" data-hero-slider>
+
+    <!-- Slide 1 -->
+    <div class="slider-item active" style="background-image: url('img/slide1.jpg');" data-hero-slider-item>
+    <div class="hero-overlay">
+        <h2>Empowering the Next Generation of Cyber Defenders</h2>
+        <p>Building a strong cybersecurity community through awareness, education, and collaboration.</p>
+        <a href="about.html" class="cta-button">Learn More</a>
+    </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slider-item" style="background-image: url('img/slide2.jpg');" data-hero-slider-item>
+    <div class="hero-overlay">
+        <h2>Empowering the Next Generation of Cyber Defenders</h2>
+        <p>Our mission is to equip students with skills to thrive in cybersecurity fields.</p>
+        <a href="achievements.html" class="cta-button">View Achievements</a>
+    </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slider-item" style="background-image: url('img/slide3.jpg');" data-hero-slider-item>
+    <div class="hero-overlay">
+        <h2>Join the Cybersecurity Intelligence Alliance</h2>
+        <p>Get involved with a community committed to defending the digital world.</p>
+        <a href="#join-now" class="cta-button">Join Us</a>
+    </div>
+    </div>
+
+</div>
+</section>
+
+
+
+
+
+<!-- Member Search Section -->
+<main>
+    <section id="search-member">
+    <h2>Search Member Details</h2>
+    <div class="search">
+        <input
+        type="text"
+        id="codename-input"
+        placeholder="Enter codename or name..."
+        onkeypress="handleKeyPress(event)"
+        />
+        <button onclick="searchMember()">Search</button>
+    </div>
+    <p id="error-message" class="hidden"></p>
+    <div id="member-details" class="hidden">
+        <div class="member-card">
+        <h3 id="member-name"></h3>
+        <p class="codename" id="member-codename"></p>
+        <p class="role" id="member-role"></p>
+        </div>
+    </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025-2026 Cybersecurity Intelligence Alliance</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
